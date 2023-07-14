@@ -98,4 +98,8 @@ var FCMPlugin = (function () {
 
 var FCM = new FCMPlugin();
 
+if(window.cordova.platformId === 'android'){
+    module.exports = {};
+}
+
 module.exports = FCM;
